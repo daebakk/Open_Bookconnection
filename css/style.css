@@ -7981,7 +7981,8 @@ figure {
     font-size: 24px
   }
 }
-              /* 검색창 디자인 */
+
+  /* 검색창 디자인 */
 .slider-text > .slider-text-inner input {
 
   display: block;
@@ -7995,25 +7996,23 @@ figure {
   text-align: center;
   font-size: 15px;
   color: #555555;
-
-
 }
 
-
-
-
-
-.slider-text > .slider-text-inner p {
+.slider-text > . p {
   margin-bottom: 30px;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   padding: 7px 0;
 }
+
 .slider-text > .slider-text-inner p > span {
   text-transform: uppercase;
   letter-spacing: 5px;
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+
 }
 .slider-text > .slider-text-inner p .btn {
   font-size: 22px !important;

@@ -1,0 +1,42 @@
+// 로그인창 디자인
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+body {
+ margin: 0 auto;
+ width: 650px;
+}
+.login_wrapper {
+  text-align: center;
+
+}
+
+.login_form > h1 {
+  font-size: 100px;
+}
+
+.login_form > input {
+  width: 500px;
+  height: 50px;
+  margin: 10px;
+  font-size: 14px;
+}
+.login_keeping {
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+.id_password_check {
+  margin: 10px;
+}
+
+#login_button {
+  font-size: 30px;
+  height: 50px;
+}
