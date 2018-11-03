@@ -7679,7 +7679,9 @@ figure {
   border-top: none;
   text-decoration: none;
   zoom: 1;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: serif;
+  font-weight: 800;
   border-bottom: none !important;
 }
 .sf-menu a:hover, .sf-menu a:focus, .sf-menu a.active {
