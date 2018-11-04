@@ -6,11 +6,15 @@
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  font-weight: bold;
 }
 
 body {
  margin: 0 auto;
  width: 650px;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+background-size: cover;
 }
 .login_wrapper {
   text-align: center;
@@ -31,6 +35,7 @@ body {
   margin-right: 300px;
   margin-top: 20px;
 }
+
 
 .id_password_check {
   margin: 10px;

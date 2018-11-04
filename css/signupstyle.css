@@ -12,10 +12,15 @@ a {
 body {
  margin: 0 auto;
  width: 500px;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+background-size: cover;
 }
 
 span {
   text-align: left;
+  font-weight: bold;
+  color: rgba(255, 255, 255,0.9);
 }
 
 

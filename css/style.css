@@ -7670,7 +7670,7 @@ figure {
 
 /* 수정사항  풀다운 메뉴 색상 투명도 1로 변경 */
 .sf-menu a {
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255,0.9);
   padding: 2.4em 1.3em !important;
   text-transform: uppercase;
   letter-spacing: 1px;

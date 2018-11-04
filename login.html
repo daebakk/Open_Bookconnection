@@ -5,13 +5,18 @@
 		<!-- 로그인 창 스타일 시트 -->
 		<link rel="stylesheet" href="css/login.css">
 		<title>Book Bus-로그인</title>
+		<style media="screen">
+			body {
+				background-image: url('images/loginwindow.jpg');
+			}
+		</style>
 	</head>
 	<body>
 		<!-- 로그인 입력창 -->
 		<div class="login_wrapper">
 			<div class="login" id="login_container">
 				<form class="login_form" action="index.html" method="post">
-					<h1>Book Bus</h1>
+					<h1><a href="mainpage.html">Book Bus</a></h1>
 					<input type="text" name="" value="" placeholder="아이디"><br>
 					<input type="password" name="" value="" placeholder="비밀번호"><br>
 					<button type="button" id="login_button" title="로그인" onclick="CheckLogin();return false;" class="btn_login btnC xb_size btn_blue">
