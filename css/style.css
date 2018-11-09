@@ -7988,7 +7988,7 @@ figure {
 .slider-text > .slider-text-inner input {
 
   display: block;
-  background-color: #FFFFFF;
+  background-color: #00000;
   border: 1px solid #CCCCCC;
   border-radius: 25px 25px 25px 25px;
   box-shadow: insert 0 1px 1px rgba(0, 0, 0, 0.05);
