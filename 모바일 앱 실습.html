@@ -222,6 +222,44 @@
 			</div>
 		</div>
 	</div>
+	<!--댓글 공간 생성 -->
+		<style>
+				textarea{
+							width:100%;
+						}
+
+				.reply_reply {
+								border: 2px solid #FF50CF;
+						}
+				.reply_modify {
+								border: 2px solid #FFBB00;
+						}
+		</style>
+		<input type="hidden" id="board_id" name="board_id" value="${boardView.id}" />
+		<div align="center">
+
+
+				<table border="1" width="1200px" id="reply_area">
+						<tr reply_type="all"><!-- 뒤에 댓글 붙이기 쉽게 선언 -->
+								<td colspan="4"></td>
+						</tr>
+						<!-- 댓글이 들어갈 공간 -->
+				</table>
+				<table border="1" width="1200px" bordercolor="000000">
+						<tr>
+								<td width="500px">
+										이름: <input type="text" id="reply_writer" name="reply_writer" style="width:170px;" maxlength="10" placeholder="작성자"/>
+										패스워드: <input type="password" id="reply_password" name="reply_password" style="width:170px;" maxlength="10" placeholder="패스워드"/>
+										<button id="reply_save" name="reply_save">댓글 등록</button>
+								</td>
+						</tr>
+						<tr>
+								<td>
+										<textarea id="reply_content" name="reply_content" rows="4" cols="50" placeholder="댓글을 입력하세요."></textarea>
+								</td>
+						</tr>
+				</table>
+		</div>
 
 	<footer id="footer" class="fh5co-bg-color">
 		<div class="container">
@@ -306,6 +344,8 @@
 	<script src="js/selectFx.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
+	<!--댓글 자바스크립트 링크 -->
+	<script src="js/jsreply.js"></script>
 
 	<script src="js/custom.js"></script>
 
