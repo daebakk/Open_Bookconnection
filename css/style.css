@@ -305,6 +305,7 @@ th {
     border-top-color: #000 !important;
   }
 
+
   .label {
     border: 1px solid #000;
   }
@@ -7424,7 +7425,7 @@ figure {
 }
 
 .btn-primary {
-  background: #31201A99;
+  background: #FF5722;
   color: #fff;
   border: 2px solid #FF5722;
 }

@@ -1,3 +1,5 @@
+// 로그인창 디자인
+@charset "UTF-8";
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
@@ -9275,3 +9277,28 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* 회원정보 테이블 css*/
+
+.member_check {
+  height: 800px;
+}
+.check > h1 {
+  text-align: center;
+  margin-right: 650px;
+  margin-top: 100px;
+  font-weight: bold;
+}
+.member >.member_field {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left:-400px;
+}
+
+.member > .member_field > .member_table {
+  width: 800px;
+  height: 300px;
+}
