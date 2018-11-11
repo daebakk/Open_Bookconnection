@@ -87,7 +87,7 @@
 						<ul class="sf-menu" id="fh5co-primary-menu">
 							<li><a class="active" href="login.html">로그인</a></li>
 							<li>
-								<a href="hotel.html" class="fh5co-sub-ddown">회원가입</a>
+								<a href="signup.html" class="fh5co-sub-ddown">회원가입</a>
 								<ul class="fh5co-sub-menu">
 									<li>
 										<ul class="fh5co-sub-menu">
@@ -208,6 +208,15 @@
 				    책 상태 : 최상 <br />
 						<br />
 						거래방법 : 택배, 직거래 가능 <br />
+						<br />
+						<button type= "button" onclick="location.href='mainpage.html'"> 장바구니 담기 </button>
+						<button type= "button" onclick="location.href='mainpage.html'"> 바로 구매 </button>
+						<br />
+						<script>
+						function goForward() {
+    			  window.history.forward();
+					  }
+				    </script>
 			      </h3>
 					</div>
 				</div>
@@ -215,6 +224,44 @@
 				</div>
 			</div>
 		</div>
+	</div>
+<!--댓글 공간 생성 -->
+	<style>
+			textarea{
+						width:100%;
+					}
+
+			.reply_reply {
+							border: 2px solid #FF50CF;
+					}
+			.reply_modify {
+							border: 2px solid #FFBB00;
+					}
+	</style>
+	<input type="hidden" id="board_id" name="board_id" value="${boardView.id}" />
+	<div align="center">
+
+
+			<table border="1" width="1200px" id="reply_area">
+					<tr reply_type="all"><!-- 뒤에 댓글 붙이기 쉽게 선언 -->
+							<td colspan="4"></td>
+					</tr>
+					<!-- 댓글이 들어갈 공간 -->
+			</table>
+			<table border="1" width="1200px" bordercolor="000000">
+					<tr>
+							<td width="500px">
+									이름: <input type="text" id="reply_writer" name="reply_writer" style="width:170px;" maxlength="10" placeholder="작성자"/>
+									패스워드: <input type="password" id="reply_password" name="reply_password" style="width:170px;" maxlength="10" placeholder="패스워드"/>
+									<button id="reply_save" name="reply_save">댓글 등록</button>
+							</td>
+					</tr>
+					<tr>
+							<td>
+									<textarea id="reply_content" name="reply_content" rows="4" cols="50" placeholder="댓글을 입력하세요."></textarea>
+							</td>
+					</tr>
+			</table>
 	</div>
 
  <!-- 푸터 부분 -->
@@ -224,7 +271,7 @@
 				<div class="col-md-3">
 					<div class="copyright">
 						<p><small>&copy; Book Bus <br> 관련사이트 <br>
-						<a href="https://www.wsu.ac.kr/main/index.jsp" target="_blank" style="color:black"> 우송대학교 </a><br><a href="https://smart.wsu.ac.kr/login.php" target="_blank" style="color:black"> 우송대학교 LMS </a> <br><a href="https://info.wsu.ac.kr/" target="_blank" style="color:black">우송대학교 대학정보시스템</a></small></p>
+						<a href="https://www.wsu.ac.kr/main/index.jsp" target="_blank" style="color:black"> <b> 우송대학교 </b> </a><br><a href="https://smart.wsu.ac.kr/login.php" target="_blank" style="color:black"><b> 우송대학교 LMS</b> </a> <br><a href="https://info.wsu.ac.kr/" target="_blank" style="color:black"><b>우송대학교 대학정보시스템</b></a></small></p>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -232,19 +279,19 @@
 						<div class="col-md-3">
 							<h3 style="font-weight:bold">컴퓨터정보보안</h3>
 							<ul class="link">
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/main/index.jsp" style="color:black">학과홈페이지</a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/page/index.jsp?code=cs0101" style="color:black">전공소개</a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0701" style="color:black">강의자료실</a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0501" style="color:black">커뮤니티</a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/main/index.jsp" style="color:black"><b>학과홈페이지</b></a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/page/index.jsp?code=cs0101" style="color:black"><b>전공소개</b></a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0701" style="color:black"><b>강의자료실</b></a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0501" style="color:black"><b>커뮤니티</b></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
 							<h3 style="font-weight:bold">스마트IT보안</h3>
 							<ul class="link">
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/main/index.jsp" style="color:black">학과 홈페이지</a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/page/index.jsp?code=it0107" style="color:black">전공소개</a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0401" style="color:black">강의자료실</a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0301" style="color:black">커뮤니티</a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/main/index.jsp" style="color:black"><b>학과 홈페이지</b></a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/page/index.jsp?code=it0107" style="color:black"><b>전공소개</b></a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0401" style="color:black"><b>강의자료실</b></a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0301" style="color:black"><b>커뮤니티</b></a></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
@@ -301,7 +348,7 @@
 	<script src="js/selectFx.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-
+	<script src="js/jsreply.js"></script>
 	<script src="js/custom.js"></script>
 
 </body>
