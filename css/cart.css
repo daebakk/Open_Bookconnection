@@ -9264,4 +9264,63 @@ input[type="text"] {
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
 
+/*장바구니 css */
+
+.cart_wrapper {
+    width: 1000px;
+    height: 1300px;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 50px;
+
+}
+table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+td  {
+    border-bottom: 1px solid #444444;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  tr > td:first-child {
+    width: 500px;
+    height: 100px;
+  }
+
+.order_btn {
+  font-size: 25px;
+}
+
+.order_btn > .order_btn1 {
+  margin-right: 25px;
+  background-color:   #FF5722;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.order_btn > .order_btn2 {
+  margin-left:25px;
+  background-color:  #FF5722;
+  border-radius: 25px 25px 25px 25px;
+
+}
+
+.order_btn1 > a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.order_btn2 > a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.cart_table_image {
+  width: 50px;
+  height: 25px;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */

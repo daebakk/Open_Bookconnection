@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>모바일 앱 실습</title>
+	<title>회원정보</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -63,7 +63,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 
 	<!-- Style -->
-	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/member_information.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -82,27 +82,19 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-					<h1 id="fh5co-logo"><a href="mainpage.html">BOOKBUS</a></h1>
+					<h1 id="fh5co-logo"><a href="로그인된메인페이지.html">BOOKBUS</a></h1>
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li><a class="active" href="login.html">로그인</a></li>
+							<li><a class="active" href="mainpage.html">로그아웃</a></li>
 							<li>
-								<a href="signup.html" class="fh5co-sub-ddown">회원가입</a>
+								<a href="" class="fh5co-sub-ddown">마이페이지</a>
 								<ul class="fh5co-sub-menu">
-									<li>
-										<ul class="fh5co-sub-menu">
-											<li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
-											<li><a href="http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
-											<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
-											<li><a href="http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
-											<li><a href="http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
-											<li><a href="http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
-										</ul>
-									</li>
+								 	<li><a href="주문배송조회.html">주문내역/배송조회</a></li>
+									<li><a href="#">회원정보</a></li>
 								</ul>
 							</li>
-							<li><a href="services.html"><img src="images/carticon.png" alt="장바구니" width="25px" height="25px">(0)</a></li>
-							<li><a href="blog.html">마이페이지</a></li>
+							<li><a href="장바구니.html">카트<img src="images/carticon.png" alt="장바구니" width="25px" height="25px"></a></li>
+							<li><a href="">상품등록</a></li>
 							<li><a href="contact.html"><img src="images/menu_bar.png" alt="메뉴바" width="20px" height="20px"></a></li>
 						</ul>
 					</nav>
@@ -110,7 +102,9 @@
 			</div>
 		</header>
 	</div>
-	<!-- 중앙 헤더부분 -->
+
+
+	<!-- 중앙헤더구성 -->
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
@@ -179,57 +173,72 @@
 			</div>
 		</div>
 	</div>
-	<div id="fh5co-blog-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>책 정보</h2>
-					</div>
+
+	<!-- 회원 정보 확인 -->
+		<div class="member_check">
+			<div class="" id="member_container">
+				<div class="check">
+					<h1>나의 정보</h1><br>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="blog-grid" style="background-image: url(images/image-3.jpg);">
-						</div>
-					</div>
-					<div class="desc">
-						<h3><a href="#"> 과목 : 안드로이드 프로그래밍 <br /></a>
-									<br />
-									교수 : 김원 교수님<br />
-									<br />
-							정가 : 29,000원<br />
-							<br />
-						  판매가 : 12,000원 (직거래시 11,000원)<br />
-							<br />
-					    책 상태 : 최상 <br />
-							<br />
-							거래방법 : 직거래만 가능 <br />
-						<br />
-						<button type= "button" onclick="location.href='mainpage.html'"><a href="장바구니.html">카트에 넣기</a></button>
-						<button type= "button" onclick="location.href='mainpage.html'"><a href="#">바로 구매</a></button>
-						<br />
-						<script>
-						function goForward() {
-    			  window.history.forward();
-					  }
-				    </script>
-			      </h3>
-					</div>
-				</div>
-					</div>
+				<div class="member">
+					<fieldset class="member_field" >
+						<legend><h3>개인 정보 관리</h3><br></legend>
+						<table border="1" class="member_table">
+						<tr>
+							<td colspan="2" bgcolor=>기본 정보</td>
+						</tr>
+							<tr>
+								<td>아이디</td>
+								<td>******</td>
+							</tr>
+							<tr>
+								<td>이름</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>성별</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>생년월일</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>비밀번호</td>
+								<td><button type="button" name="button">비밀번호 변경</button></td>
+							</tr>
+							<tr>
+								<td rowspan="3" height=100>주소</td>
+								<td>도로명 주소:     <button type="button" name="button">주소 찾기</button></td>
+							</tr>
+							<tr>
+								<td>지번 주소:</td>
+							</tr>
+							<tr>
+										<td>상세주소:</td>
+							</tr>
+							<tr>
+								<td>휴대폰번호</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>이메일</td>
+								<td></td>
+							</tr>
+						</table>
+					</fieldset>
 				</div>
 			</div>
 		</div>
-	</div>
 
+ <!-- 푸터 부분 -->
 	<footer id="footer" class="fh5co-bg-color">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
 					<div class="copyright">
 						<p><small>&copy; Book Bus <br> 관련사이트 <br>
-						<a href="https://www.wsu.ac.kr/main/index.jsp" target="_blank" style="color:black"> <b> 우송대학교 </b> </a><br><a href="https://smart.wsu.ac.kr/login.php" target="_blank" style="color:black"><b> 우송대학교 LMS</b> </a> <br><a href="https://info.wsu.ac.kr/" target="_blank" style="color:black"><b>우송대학교 대학정보시스템</b></a></small></p>
+						<a href="https://www.wsu.ac.kr/main/index.jsp" target="_blank" style="color:black"> 우송대학교 </a><br><a href="https://smart.wsu.ac.kr/login.php" target="_blank" style="color:black"> 우송대학교 LMS </a> <br><a href="https://info.wsu.ac.kr/" target="_blank" style="color:black">우송대학교 대학정보시스템</a></small></p>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -237,19 +246,19 @@
 						<div class="col-md-3">
 							<h3 style="font-weight:bold">컴퓨터정보보안</h3>
 							<ul class="link">
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/main/index.jsp" style="color:black"><b>학과홈페이지</b></a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/page/index.jsp?code=cs0101" style="color:black"><b>전공소개</b></a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0701" style="color:black"><b>강의자료실</b></a></li>
-								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0501" style="color:black"><b>커뮤니티</b></a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/main/index.jsp" style="color:black">학과홈페이지</a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/page/index.jsp?code=cs0101" style="color:black">전공소개</a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0701" style="color:black">강의자료실</a></li>
+								<li style="font-size:13px"><a href="http://cs.wsu.ac.kr/board/index.jsp?code=cs0501" style="color:black">커뮤니티</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
 							<h3 style="font-weight:bold">스마트IT보안</h3>
 							<ul class="link">
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/main/index.jsp" style="color:black"><b>학과 홈페이지</b></a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/page/index.jsp?code=it0107" style="color:black"><b>전공소개</b></a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0401" style="color:black"><b>강의자료실</b></a></li>
-								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0301" style="color:black"><b>커뮤니티</b></a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/main/index.jsp" style="color:black">학과 홈페이지</a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/page/index.jsp?code=it0107" style="color:black">전공소개</a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0401" style="color:black">강의자료실</a></li>
+								<li style="font-size:13px"><a href="http://it.wsu.ac.kr/board/index.jsp?code=it0301" style="color:black">커뮤니티</a></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
