@@ -1,0 +1,86 @@
+// 회원가입창 디자인
+@charset "UTF-8";
+
+// 전체 기본 세팅
+* {margin: 0; padding: 0;}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+body {
+ margin: 0 auto;
+ width: 500px;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+background-size: cover;
+}
+
+span {
+  text-align: left;
+  font-weight: bold;
+  color: rgba(255, 255, 255,0.9);
+}
+
+
+.sign >  h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+.sign_form > input {
+  width: 450px;
+  height: 40px;
+  margin: 10px;
+}
+
+.birth > input {
+  width: 140px;
+  height: 40px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.birth > select {
+  width: 140px;
+  height: 40px;
+  margin: 5px;
+  font-size: 14px
+}
+
+.sex > select {
+  width: 450px;
+  height: 40px;
+  margin:10px;
+  font-size: 15px;
+}
+
+.phone :first-child {
+  width: 290px;
+  height: 40px;
+  margin: 10px;
+  font-size: 15px;
+}
+.sign_form > .email {
+  font-size: 15px;
+}
+.phone > button {
+  width: 140px;
+  height: 40px;
+  margin: 10px;
+  font-size: 15px;
+}
+.phone > .certificate {
+  width: 450px;
+  height: 40px;
+  margin:10px;
+  font-size: 15px;
+}
+
+.sign_form > button {
+  width: 450px;
+  height: 40px;
+  margin:10px;
+  font-size: 15px;
+}
